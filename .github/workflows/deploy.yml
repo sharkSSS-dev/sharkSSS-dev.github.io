@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          NODE_ENV: production
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           pnpm run build
 
